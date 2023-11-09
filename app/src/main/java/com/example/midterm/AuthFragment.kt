@@ -28,7 +28,6 @@ class AuthFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_auth, container, false)
-        // Inflate the layout for this fragment
         loginEditText = view.findViewById(R.id.loginEditText)
         passwordEditText = view.findViewById(R.id.passwordEditText)
         loginButton = view.findViewById(R.id.loginButton)
@@ -62,7 +61,7 @@ class AuthFragment : Fragment() {
 
     private fun runApp() {
         val bundle = Bundle()
-        bundle.putSerializable("user", users) // Put anything what you want
+        bundle.putSerializable("user", users)
         val fragment = ActionsFragment()
         fragment.arguments = bundle
         val fm = activity?.supportFragmentManager

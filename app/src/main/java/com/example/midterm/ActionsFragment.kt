@@ -33,7 +33,6 @@ class ActionsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view =  inflater.inflate(R.layout.fragment_actions, container, false)
         withdraw = view.findViewById(R.id.withdraw)
         deposit = view.findViewById(R.id.deposit)
