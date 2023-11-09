@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActionsFragment"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/info_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/amountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter sum"
+        android:layout_below="@id/info_textview"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amountEditText">
+
+        <Button
+            android:id="@+id/show_balance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Show balance"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/deposit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Deposit"
+            android:layout_marginLeft="5dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout">
+
+        <Button
+            android:id="@+id/withdraw"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:text="Withdraw"
+            />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text="Exit" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
