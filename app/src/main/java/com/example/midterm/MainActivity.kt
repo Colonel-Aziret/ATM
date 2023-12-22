@@ -3,6 +3,7 @@ package com.example.midterm
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
+import com.example.midterm.fragments.AuthFragment
 
 
 class MainActivity : AppCompatActivity() {
